@@ -14,7 +14,7 @@
 }
 body {
   font-family: "Inter", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 header {
   position: sticky;
@@ -70,6 +70,7 @@ nav ul li a {
   /* transition: background-color 1s; */
   padding: 12px 10px;
   border-radius: 20px;
+  font-weight: 500;
 }
 nav ul li a:hover {
   background-color: #ffffff2e;
@@ -105,11 +106,198 @@ nav ul li a:hover {
   font-size: 0.9rem;
 }
 
+/* Main Container Structure */
+.maincontainer {
+  position: relative;
+  margin-top: -110px; /* Pull content up behind sticky header */
+}
+
 .bgimg {
   background-image: url("/images/banner/bg-light.svg");
-  height: 120vh;
+  height: 160vh;
   width: 100%;
-  margin-top: -110px;
+  /* margin-top: -110px; Removed, handled by container now */
   background-repeat: no-repeat;
   background-size: cover;
+
+  /* Position behind content */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Banner & Hero Section */
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 10rem; /* Adjust based on navbar height + desired spacing */
+}
+
+.sub-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #ffffff1a;
+  padding: 4px 12px 4px 4px;
+  border-radius: 30px;
+  width: fit-content;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sub-text:hover {
+  background-color: #ffffff2e;
+}
+
+.badge {
+  background-color: var(--primary);
+  color: #064e3b;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+}
+
+/* Email Signup Form */
+.email-signup {
+  display: flex;
+  background-color: #ffffff1a;
+  padding: 6px;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 480px;
+  backdrop-filter: blur(10px);
+}
+
+.email-signup input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+}
+
+.email-signup input::placeholder {
+  color: #ffffff6c;
+}
+
+.email-signup button {
+  background-color: white;
+  color: var(--tertiary);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.email-signup button:hover {
+  transform: scale(1.02);
+}
+.demo {
+  margin-top: 6rem;
+  border-radius: 16px;
+}
+.patnerimg {
+  width: fit-content;
+}
+.patner-container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.intelligence-container {
+  margin: 6rem 0 2rem;
+}
+.heading-container {
+  margin: 0 auto;
+  /* border: 2px solid red; */
+  text-align: center;
+  width: 40%;
+}
+.heading-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.heading-container {
+  margin-bottom: 2rem;
+}
+.agent-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(1, 1fr); */
+  /* border: 2px solid red; */
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+.agent-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: flex-start;
+  outline: 1px solid var(--secondary);
+  border-radius: 18px;
+}
+.agenttextcontainer span {
+  color: var(--primary);
+}
+.agenttextcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+.agenttextcontainer h2 {
+  font-size: 2rem;
+}
+.agenttextcontainer p {
+  color: #16181c9f;
+}
+.agent-card2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid var(--secondary);
+  border-radius: 18px;
+  width: 78%;
+  margin: 0 auto 6rem;
+  /* padding: 1rem; */
+}
+.nextcontainer {
+  text-align: center;
+  width: 50%;
 }
