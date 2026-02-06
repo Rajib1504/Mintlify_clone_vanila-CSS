@@ -89,8 +89,8 @@ nav ul li a:hover {
 }
 
 .btn-primary {
-  background-color: #ffffff;
-  color: var(--tertiary);
+  background-color: var(--tertiary);
+  color: #ffffff;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 18px;
@@ -98,7 +98,7 @@ nav ul li a:hover {
   font-weight: 500;
 }
 .btn-secondary {
-  background-color: #ffffff16;
+  background-color: #c8c8c844;
   color: var(--tertiary);
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -297,7 +297,203 @@ nav ul li a:hover {
   margin: 0 auto 6rem;
   /* padding: 1rem; */
 }
-.nextcontainer {
-  text-align: center;
-  width: 50%;
+/* Enterprise Section */
+.enterprise-section {
+  padding: 6rem 0;
+  width: 100%;
+  /* border: 2px solid red; */
+  background-color: #f7f7f7;
+}
+
+.enterprise-container {
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header */
+.enterprise-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  /* border: 2px solid red; */
+}
+
+.enterprise-intro {
+  max-width: 600px;
+}
+
+.eyebrow {
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--tertiary);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.section-desc {
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.btn-enterprise {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--tertiary);
+  color: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-enterprise:hover {
+  background-color: #494949;
+  border-color: #505050;
+}
+
+/* Features */
+.enterprise-features {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  flex: 1;
+  min-width: 280px;
+}
+
+.icon-box {
+  margin-bottom: 1rem;
+}
+
+.feature-icon {
+  width: 32px;
+  height: 32px;
+  color: var(--primary);
+}
+
+.feature-item h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--tertiary);
+  margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* Customer Story Card */
+.customer-story-card {
+  position: relative;
+  background-color: #0f172a;
+  border-radius: 24px;
+  overflow: hidden;
+  color: #ffffff;
+  padding: 3rem;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/Enterprise-reinvention/anthropic.svg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-eyebrow {
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  opacity: 0.9;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.card-content h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.read-story-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: auto;
+}
+
+.card-stats {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.stat-val {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.875rem;
+  opacity: 0.8;
+  max-width: 200px;
+  line-height: 1.4;
+}
+.brands {
+  width: fit-content;
+  /* border: 2px solid red; */
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
